@@ -1,7 +1,11 @@
-import React from 'react'
+'use client'
+import React, { useContext } from 'react'
 import './button.scss'
-export default function Button({title, className, ... props}) {
+import { ModalContext } from '@/context/ModalCTX'
+export default function Button({title, className,  ... props}) {
+  const {setIsModalOpen, isModalOpen} = useContext(ModalContext)
+  
   return (
-    <button className={`${className} btn`} {...props}>{title}</button>
+    <button onClick={()=> setIsModalOpen(true)} className={`${className} btn`}  {...props}>{title}</button>
   )
 }

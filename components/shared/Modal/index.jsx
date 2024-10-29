@@ -2,7 +2,11 @@
 import React, { useEffect, useRef } from 'react';
 import './modal.scss';
 import Image from 'next/image';
+import { ModalContext } from '@/context/ModalCTX';
 export default function Modal() {
+  const {isModalOpen, setIsModalOpen} = React.useContext(ModalContext)
+  
+
   const [inputValue, setInputValue] = React.useState({
     name: '', 
     doctor: '', 
@@ -36,10 +40,24 @@ export default function Modal() {
     }
   };
 
+  const handleCloseModal = () =>{
+    setIsModalOpen(false)
+    setTimeout(() => {
+      setIsShow(true)    
+    }, 1000);
+  
+  }
   const handleSubmit = (e) =>{
     e.preventDefault() 
-  //  sendToTelegram(inputValue)
+   sendToTelegram(inputValue)
   console.log('send');
+  setInputValue({
+    name: '', 
+    doctor: '', 
+    date: '',
+    phone: ''
+  });
+  
   setTimeout(() => {
     setIsShow(!isShow)    
   }, 1000);
@@ -52,10 +70,11 @@ export default function Modal() {
     
   // },[date])
  
+  console.log(isShow);
   
   return (
-    <div className="modal">
-      {isShow ? (  <div className="modal__item">
+    <div className={`modal ${isModalOpen ? 'active' : ''}`}>
+      {isShow ? (  <div className={`modal__item`}>
         <h3 className="modal__title">
           Получите консультацию <br /> специалиста бесплатно
         </h3>
@@ -63,7 +82,7 @@ export default function Modal() {
           Не нашли категорию или остались вопросы? <br />
           Оставьте заявку и мы поможем вам
         </p>
-        <form action="" onSubmit={handleSubmit}>
+        <form action="" >
           <div className="inp__name">
             <Image width={32} height={32} src={'/assets/input-person.png'}/>
           <input onChange={(e)=> setInputValue({...inputValue, name: e.target.value})} value={inputValue.name} type="text" placeholder="Ваше имя" />
@@ -92,15 +111,20 @@ export default function Modal() {
       <div className='inp__hidden_date'>
       <input onChange={(e)=> setInputValue({...inputValue, date: e.target.value})}   ref={inputRef} type="date" />
       </div>
-      <button className='modal__btn'>Оставить заявку</button>
+   
+
         </form> 
+        <div className='modal__btn_container'>
+      <button onClick={handleSubmit} className='modal__btn'>Оставить заявку</button> 
+      <button onClick={handleCloseModal} className='modal__close_btn'>Отмена</button>
+      </div>
       
       </div>) : ( <div className='modal__notification'>
         <h3 className='modal__notification_title'>
         Сообщение отправлено
         </h3>
         <span className='modal__notification_subtitle'>Ваше сообщение отправлено, скоро мы с вами свяжемся</span> 
-        <button className='modal__notification_btn'>Спасибо</button>
+        <button onClick={handleCloseModal} className='modal__notification_btn'>Спасибо</button>
       </div>)}
     
      

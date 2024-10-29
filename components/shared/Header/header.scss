@@ -2,11 +2,19 @@
   display: flex; 
   align-items: center; 
   justify-content: space-between;
-  width: 90%;
+  width: 100%;
+  padding-left: 100px;
+  padding-right: 100px;
   margin: 0 auto;
   height: 90px; 
   color: white;
-  margin-top: 15px;
+  transition: 300ms ease-in;
+  position: fixed;
+
+  // background: white;
+  // color: black; 
+  // box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+ 
   z-index: 999;
   .header__left{
     display: flex;
@@ -46,4 +54,10 @@
       }
     }
   }
+}
+
+.header-active{
+    background: white;
+  color: #1B315F; 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }

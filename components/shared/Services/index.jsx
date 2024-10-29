@@ -1,9 +1,12 @@
-
+'use client'
 import React from 'react'
 import './services.scss'
 import Image from 'next/image'
 import ServicesItem from './ServicesItem'
-
+import { useGSAP } from '@gsap/react';
+import gsap from 'gsap';
+import { SplitText } from 'gsap-trial/all';
+import { ScrollTrigger } from 'gsap/all';
 const data = [
   {
     narcomania :{ 
@@ -85,19 +88,82 @@ const data = [
 //     }
   }
 ]
-export default function Services() {
+export default function Services() { 
+  useGSAP(()=>{
+    gsap.registerPlugin(SplitText)
+   
+      let mySplitText = new SplitText('.services__title', {type: 'chars'}) 
+      let chars = mySplitText.chars 
+    // gsap.fromTo("#first-line", {
+    //   x:600 ,
+    // },{
+    //   x: 0,
+    //   duration: 1.2,
+    //   // animationDelay: 1,
+    //   stagger: 0.5,
+    //   delay: 0.5,
+    
+    //   scrollTrigger:{
+    //     trigger: '#title', 
+    //     start: 'top 80%'
+    //   }
+    // })
+    gsap.fromTo(chars, {
+      
+  
+    
+      opacity: 0,
+
+    },{
+      opacity: 1, 
+      stagger:  0.03, 
+      duration: 1,
+      scrollTrigger:{
+        trigger: '.services__title', 
+        start: 'top 80%'
+      }
+    })
+    gsap.fromTo(".services__img", {
+      x:-600 ,
+    },{
+      x: 0,
+      duration: 1,
+      animationDelay: 1,
+      // stagger: 0.2,
+     
+      scrollTrigger:{
+        trigger: '.services__img', 
+        start: 'top 80%'
+      }
+    })
+    // services__prices_item
+    gsap.fromTo(".services__prices_item", {
+      opacity: 0 ,
+    },{
+      opacity: 1,
+      duration: 1,
+      animationDelay: 1,
+      stagger: 0.2,
+     
+      scrollTrigger:{
+        trigger: '.services__prices_item', 
+        start: 'top 80%'
+      }
+    })
+  },[])
+
  
   return (
     <section className='services'> 
     <div className='services__main_text'> 
-      <div className='services__line'></div>
-    <h2 className='services__title'>
+      <div id='first-line' className='services__line'></div>
+    <h2  className='services__title'>
     Наши <span>услуги</span> 
     </h2>
     </div> 
     <div className='services__items'> 
      
-        <Image src='/assets/services-img.png' width={528} height={694}/>
+        <Image className='services__img' src='/assets/services-img.png' width={528} height={694}/>
      
       <div className='services__item_container'>
     <ServicesItem data={data[0].narcomania}/>
