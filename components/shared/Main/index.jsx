@@ -13,7 +13,7 @@ export default function Main() {
 
 
   useGSAP(() => {    
-  gsap.registerPlugin(SplitText)
+
   
 
   
