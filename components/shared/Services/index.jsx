@@ -7,6 +7,7 @@ import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
 import { SplitText } from 'gsap-trial/all';
 import { ScrollTrigger } from 'gsap/all';
+import { splitTextToSpans } from '@/utils/textSplit'
 const data = [
   {
     narcomania :{ 
@@ -90,39 +91,26 @@ const data = [
 ]
 export default function Services() { 
   useGSAP(()=>{
-    gsap.registerPlugin(SplitText)
-   
-      let mySplitText = new SplitText('.services__title', {type: 'chars'}) 
-      let chars = mySplitText.chars 
-    // gsap.fromTo("#first-line", {
-    //   x:600 ,
-    // },{
-    //   x: 0,
-    //   duration: 1.2,
-    //   // animationDelay: 1,
-    //   stagger: 0.5,
-    //   delay: 0.5,
+    splitTextToSpans('.services__title')
+
+    gsap.fromTo('.services__title .char', {
     
-    //   scrollTrigger:{
-    //     trigger: '#title', 
-    //     start: 'top 80%'
-    //   }
-    // })
-    gsap.fromTo(chars, {
-      
+    
   
-    
       opacity: 0,
+      yPercent: 130
 
     },{
-      opacity: 1, 
-      stagger:  0.03, 
+      opacity: 1,
+      yPercent: 0,
+      stagger: 0.03,
       duration: 1,
       scrollTrigger:{
         trigger: '.services__title', 
         start: 'top 80%'
       }
     })
+
     gsap.fromTo(".services__img", {
       x:-600 ,
     },{

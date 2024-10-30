@@ -7,44 +7,55 @@ import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 import { SplitText } from 'gsap-trial/all'
 import Image from 'next/image'
+import { splitTextToSpans } from '@/utils/textSplit'
 
 export default function Main() { 
 
 
   useGSAP(() => {    
   gsap.registerPlugin(SplitText)
-    const li  = document.querySelectorAll('#list')
-    let mySplitText = new SplitText('.main__title', {type: 'chars'}) 
-    let mySplitList = new SplitText( li, {type: 'chars'})
-    let charsList = mySplitList.chars 
-    let chars = mySplitText.chars
+  
+    // let mySplitText = new SplitText('.main__title', {type: 'chars'}) 
+    // let mySplitList = new SplitText( li, {type: 'chars'})
+  
     // gsap.set(chars, {
     //   yPercent: 130, // Смещение вниз
     //   opacity: 0, // Полная прозрачность
     // });
+    splitTextToSpans('.main__title')
 
-    gsap.fromTo(chars, {
+    gsap.fromTo('.main__title .char', {
     
     
   
       opacity: 0,
+      yPercent: 130
 
     },{
-      opacity: 1, 
-      stagger:  0.05, 
-      duration: 1
+      opacity: 1,
+      yPercent: 0,
+      stagger: 0.03,
+      duration: 1,
     })
-    gsap.fromTo(charsList, {
-    
-    
-  
+    gsap.fromTo('#list', {
       opacity: 0,
 
     },{
       opacity: 1, 
-      stagger:  0.03, 
+      stagger:  0.3, 
       duration: 1
     })
+
+    // gsap.fromTo('#main-btn', {
+    //   opacity: 0,
+    //   x: 500,
+
+    // },{
+    //   // x: 0, 
+    //   opacity: 1,
+    //   stagger:  0.3, 
+    //   duration: 1
+    // })
 
   }, []);
   return (
@@ -65,7 +76,7 @@ export default function Main() {
         <li id='list'>В клинике «Med Fast Clinic» работают врачи с многолетним опытом, <br />
         готовые оказать качественную медицинскую помощь</li>
       </ul>
-      <Button title={'Оставить заявку'}/>
+      <Button id='main-btn' title={'Оставить заявку'}/>
       
       </div>
    

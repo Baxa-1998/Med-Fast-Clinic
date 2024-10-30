@@ -7,32 +7,55 @@ import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
 import { SplitText } from 'gsap-trial/all';
 import { ScrollTrigger } from 'gsap/all';
+import { splitTextToSpans } from '@/utils/textSplit';
 export default function Description() { 
-  useGSAP(() => {    
-    gsap.registerPlugin(SplitText)
+
+  
+  
+  useGSAP(() => {   
+   
+  
     gsap.registerPlugin(ScrollTrigger)
-      let mySplitText = new SplitText('#title', {type: 'chars'}) 
-      let chars = mySplitText.chars 
+ 
+
+    // Вызываем функцию для разделения текста
+    splitTextToSpans('#title');
+
+    // Анимация символов
+    gsap.fromTo('#title .char', {
+      opacity: 0,
+      yPercent: 130,
+    }, {
+      opacity: 1,
+      yPercent: 0,
+      stagger: 0.03,
+      duration: 1,
+      scrollTrigger: {
+        trigger: '#title',
+        start: 'top 80%',
+      }
+    });
+ 
       // gsap.set(chars, {
       //   yPercent: 130, // Смещение вниз
       //   opacity: 0, // Полная прозрачность
       // });
   
-      gsap.fromTo(chars, {
+      // gsap.fromTo('#title', {
       
       
     
-        opacity: 0,
+      //   opacity: 0,
   
-      },{
-        opacity: 1, 
-        stagger:  0.03, 
-        duration: 1,
-        scrollTrigger:{
-          trigger: '#title', 
-          start: 'top 80%'
-        }
-      })
+      // },{
+      //   opacity: 1, 
+      //   stagger:  0.03, 
+      //   duration: 1,
+      //   scrollTrigger:{
+      //     trigger: '#title', 
+      //     start: 'top 80%'
+      //   }
+      // })
       gsap.fromTo(".description__img", {
         x:-500 ,
       },{
