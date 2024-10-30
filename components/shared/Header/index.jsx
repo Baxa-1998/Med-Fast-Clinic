@@ -4,7 +4,7 @@ import './header.scss'
 import Button from '@/components/UI/Button'
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
-import { SplitText } from 'gsap-trial/all'
+
 export default function Header() {
   const [isHeader, setIsHeader] = React.useState(false) 
   useEffect(()=>{

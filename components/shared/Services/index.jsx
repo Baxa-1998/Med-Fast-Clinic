@@ -5,7 +5,7 @@ import Image from 'next/image'
 import ServicesItem from './ServicesItem'
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
-import { SplitText } from 'gsap-trial/all';
+
 import { ScrollTrigger } from 'gsap/all';
 import { splitTextToSpans } from '@/utils/textSplit'
 const data = [

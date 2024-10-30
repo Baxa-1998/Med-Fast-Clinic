@@ -5,7 +5,7 @@ import Button from '@/components/UI/Button'
 import Title from '@/components/UI/title'
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
-import { SplitText } from 'gsap-trial/all'
+
 import Image from 'next/image'
 import { splitTextToSpans } from '@/utils/textSplit'
 
@@ -15,8 +15,7 @@ export default function Main() {
   useGSAP(() => {    
   gsap.registerPlugin(SplitText)
   
-    // let mySplitText = new SplitText('.main__title', {type: 'chars'}) 
-    // let mySplitList = new SplitText( li, {type: 'chars'})
+
   
     // gsap.set(chars, {
     //   yPercent: 130, // Смещение вниз

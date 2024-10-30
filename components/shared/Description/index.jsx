@@ -5,7 +5,7 @@ import Image from 'next/image';
 import Title from '@/components/UI/title';
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
-import { SplitText } from 'gsap-trial/all';
+
 import { ScrollTrigger } from 'gsap/all';
 import { splitTextToSpans } from '@/utils/textSplit';
 export default function Description() { 
