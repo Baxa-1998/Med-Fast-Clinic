@@ -42,16 +42,16 @@ export default function Photos() {
       <h2 className='photos__title'>Фото клиники</h2> 
       <div className='photo__items'>
         <div id='stagger-img' className="photo__item">
-        <Image className='card-background' width={371} height={277} src='/assets/photo.png'/>
+        <Image className='card-background' width={371} height={277} src='/assets/photo-of-clinic/1.png'/>
         </div>
         <div id='stagger-img' className="photo__item">
-        <Image  className='card-background'  width={371} height={277} src='/assets/photo.png'/>
+        <Image className='card-background' width={371} height={277} src='/assets/photo-of-clinic/2.png'/>
         </div>
         <div id='stagger-img' className="photo__item">
-        <Image  className='card-background'  width={371} height={277} src='/assets/photo.png'/>
+        <Image className='card-background' width={371} height={277} src='/assets/photo-of-clinic/3.png'/>
         </div>
         <div id='stagger-img' className="photo__item">
-        <Image  className='card-background'  width={371} height={277} src='/assets/photo.png'/>
+        <Image className='card-background' width={371} height={277} src='/assets/photo-of-clinic/4.png'/>
         </div>
         <div id='stagger-img' className="photo__item">
         <Image width={371} height={277} src='/assets/photo.png'/>
