@@ -1,4 +1,4 @@
-// 'use client'
+'use client'
 import React from 'react'
 import Adress from "@/components/shared/Address";
 import Consultation from "@/components/shared/Consultation";
@@ -13,17 +13,19 @@ import Reviews from "@/components/shared/Reviews";
 import Services from "@/components/shared/Services";
 import { ModalCTX } from '@/context/ModalCTX';
 import Title from '@/components/UI/title';
+import Drawer from '@/components/shared/Drawer';
 
 
 export default function Home() {
-
+  const [isBurger, setIsBurger] = React.useState(false)
 
 
   return (
     <ModalCTX>
           <div className="wrapper">
       <Modal  />
-      <Header/>
+      <Drawer setIsBurger={setIsBurger} isBurger={isBurger}/>
+      <Header isBurger={isBurger} setIsBurger={setIsBurger} />
     <Main/>
     <Description/>
     <Services/>

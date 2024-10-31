@@ -4,7 +4,7 @@
   width: 90%; 
   background: var(--background);
   margin: auto;
-  position: relative;
+
   overflow: hidden;
   .square{
     position:absolute;
@@ -14,15 +14,7 @@
   }
   
   
-  @keyframes boxes{
-    0%{
-      bottom:-100px;
-      opacity:1;}
-    100%{
-      bottom:100%;
-      transform:rotate(180deg);
-      opacity:0;}
-  }
+
   
   .square:nth-child(1){
     width:75px;
@@ -99,7 +91,7 @@
     height: 100%;
     margin-top: 50px;
    
-    
+  
     // height: fit-content;
     
     h3{

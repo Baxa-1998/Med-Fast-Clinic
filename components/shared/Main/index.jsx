@@ -58,7 +58,7 @@ export default function Main() {
 
   }, []);
   return (
-    <section className='main'> 
+    <section id='main' className='main'> 
 
       <video autoPlay={true} muted loop src='./assets/video.mp4'/>
       <div className='main__content'>

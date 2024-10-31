@@ -142,7 +142,7 @@ export default function Services() {
 
  
   return (
-    <section className='services'> 
+    <section id='services' className='services'> 
     <div className='services__main_text'> 
       <div id='first-line' className='services__line'></div>
     <h2  className='services__title'>

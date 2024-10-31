@@ -68,7 +68,7 @@ export default function Reviews() {
     );
   }
   return (
-  <div className='reviews'> 
+  <section id='reviews' className='reviews'> 
   <div className='reviews__main_text'>
     <div className='reviews__line'></div>
     <h3 className='reviews__title'>За нас говорят наши клиенты</h3>
@@ -102,6 +102,6 @@ export default function Reviews() {
       </div>
   
     </Slider>
-  </div>
+  </section>
   )
 }

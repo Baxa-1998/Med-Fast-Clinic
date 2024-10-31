@@ -5,8 +5,17 @@ import Button from '@/components/UI/Button'
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 
-export default function Header() {
+export default function Header({isBurger, setIsBurger}) {
+ 
   const [isHeader, setIsHeader] = React.useState(false) 
+  useEffect(()=>{
+    if(isBurger){
+      document.body.style.overflow = 'hidden'
+      setIsHeader(false)
+    }else{
+ document.body.style.overflow = ''
+    }
+  })
   useEffect(()=>{
     window.addEventListener('scroll', ()=>{
       const scrollY = window.scrollY; 
@@ -57,11 +66,11 @@ export default function Header() {
          </div>
          <div className='header__center'>
           <ul>
-            <a id='stagger' href='#'><li>Главная</li></a>
-            <a id='stagger' href='#'><li>Наши услуги</li></a>
-            <a id='stagger' href='#'><li>Отзывы</li></a>
-            <a id='stagger' href='#'><li>Наши доктора</li></a>
-            <a id='stagger' href='#'><li>Контакты</li></a>
+            <a id='stagger' href='#main'><li>Главная</li></a>
+            <a id='stagger' href='#services'><li>Наши услуги</li></a>
+            <a id='stagger' href='#reviews'><li>Отзывы</li></a>
+            <a id='stagger' href='#doctors'><li>Наши доктора</li></a>
+            <a id='stagger' href='#contacts'><li>Контакты</li></a>
           </ul>
 
          </div>
@@ -72,7 +81,12 @@ export default function Header() {
             <span> г. Самарканд, ул. Озод Шарк, 8</span>
           </ul>
           <Button title='Оставить заявку'/>
+       
          </div>
+         <div onClick={()=>   setIsBurger(!isBurger)} className={`burger ${isBurger ? 'burger-active' : ''}`}>
+            <div className='burger__item'></div>
+            <div className='burger__item'></div>
+          </div>
     </header>
   )
 }
