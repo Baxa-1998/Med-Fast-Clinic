@@ -93,7 +93,8 @@
     img{
       border-radius: 50% 50% 50% 0%;
       width: 400px;
-      height: 370px;
+      height: 370px; 
+      object-fit: cover;
     }
    
   
@@ -160,5 +161,18 @@
       }
     }
   }
-  
+  @media screen and (max-width: 1510px){
+    .description__img{
+      img{
+        height: 250px;
+      }
+    }
+    .description__info{
+      padding-left: 20px;
+    }
+
+  }
+  @media screen and (max-width: 1366px){
+    flex-direction: column;
+  }
 }
