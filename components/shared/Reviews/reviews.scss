@@ -109,6 +109,7 @@
   }
 
 }
+
 .slick-prev{
   left: -200px;
 
@@ -127,8 +128,42 @@
 
 }
 
+
 .slick-list {
     margin: 0 -10px; /* Убедитесь, что слайды корректно выравниваются */
 }
- 
+
+@media screen and (max-width: 540px){
+.slider-container{
+  width: 100% !important;
+  .reviews__item{
+    padding: 10px;
+    .reviews__title{
+      font-size: 20px;
+    }
+    .reviews__item_date{
+      font-size: 16px;
+    }
+    .reviews__item_text{
+      font-size: 10px;
+    }
+  }
+}
+  .slick-prev{
+    display: none !important;
+  }
+  .slick-next{
+    display: none;
+  }
+  .reviews__main_text{
+
+    .reviews__title{
+      font-size: 32px;
+
+    }
+    .reviews__line{
+height: 75px;
+    }
+  }
+} 
 }

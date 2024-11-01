@@ -51,4 +51,10 @@
       }
     }
   }
+  @media screen and (max-width: 540px) {
+    .photos__title{
+      font-size: 32px;
+      margin-left: 0px;
+    }
+  }
 }
