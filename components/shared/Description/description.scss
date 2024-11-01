@@ -172,10 +172,30 @@
     }
 
   }
+
   @media screen and (max-width: 1366px){
     flex-direction: column;
     .description__img{
+      width: 100%;
+      img{
+        height: 350px;
+        margin-left: 50%;
+        transform: translate(-50%);
+        border-radius: 50%;
+      }
       
+    }
+    .description__info{
+      h2{
+        width: fit-content;
+      }
+    }
+  }
+  @media screen and (max-width: 540px){
+    .description__info{
+      h2{
+        font-size: 30px;
+      }
     }
   }
 }
