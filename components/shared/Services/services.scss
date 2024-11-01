@@ -94,4 +94,24 @@
 
     }
   }
+
+  @media screen and (max-width: 540px){
+    .services__items{
+      .services__item_container{
+        .services__item{
+          .services__prices{
+            .services__prices_item{
+              font-size: 12px;
+              flex-direction: column;
+              padding-bottom: 25px;
+              border-bottom: 1px solid var(--primary-color);
+            }
+            .prices__item_line{
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
 }

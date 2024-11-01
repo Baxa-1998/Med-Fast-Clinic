@@ -15,7 +15,7 @@ export default function ServicesItem({data}) {
          
             <div className='services__line'></div>
       </div>
-      <div className='flex justify-between flex-col'>
+      <div className='flex justify-between flex-col gap-[120px] sm:gap-[0px]'>
       <div className='services__prices'>
         {/* <h3>
          {data.headTitle}
