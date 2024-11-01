@@ -91,8 +91,8 @@ export default function Description() {
       <div  className="description__img">
         <Image width={412} height={412} src={'/assets/doctor.png'} alt="doctor" />
         <h3>
-          Захаров Терентий <br />
-          <span>Александрович</span>
+        Абдуллаев Достонжон <br />
+          <span>Кахрамонович</span>
         </h3>
       </div>
       <div className="description__info">

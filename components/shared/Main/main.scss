@@ -68,4 +68,19 @@
     line-height: 60px;
     
   }
+  @media screen and (max-width: 540px){
+    .main__title{
+      font-size: 36px; 
+      width: 400px;
+    }
+    .main__content{
+      ul{
+        li{
+          font-size: 16px;
+        }
+      }
+    }
+  }
 }
+
+

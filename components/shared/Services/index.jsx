@@ -16,40 +16,85 @@ const data = [
       items: [
         {
           id: 1,
-          subtitle: 'Убод',
-          price: '30 000',
+          subtitle: 'Видеоскольпоскопия',
+          price: '150 000',
       },
       {
         id: 2,
-        subtitle: 'Снятие ломки',
-        price: '6 500',
+        subtitle: 'УЗИ в I триместре беременности	120 000',
+        price: '120 000',
     },
     {
       id: 3,
-      subtitle: 'Наркологическая помощь',
-      price: '6 000',
+      subtitle: '	УЗИ Верхний живот (печень, желчный пузырь, поджелудочная железа, селезенка)',
+      price: '80 000',
   },
   {
     id: 4,
-    subtitle: 'Детоксикация от наркотиков',
-    price: '6 000',
+    subtitle: 'Узи Матки и придатков (трансвагинальное)',
+    price: '80 000',
+},
+{
+  id: 5,
+  subtitle: 'УЗИ щитовидной железы  с региональными лимфоузлами',
+  price: '70 000',
 },
     ], 
     items2: [
       {
         id: 1,
-        subtitle: 'Убод2',
-        price: '30 000',
+        subtitle: '	Стационар амбулаторный 1 день \n Туда входит 4-х разовая питание и физиотерапия.',
+        price: '350 000',
     },
     {
       id: 2,
-      subtitle: 'Снятие ломки2',
-      price: '6 500',
+      subtitle: 'ЭКГ с расшифровкой',
+      price: '40 000',
   },
   {
     id: 3,
-    subtitle: 'Наркологическая помощь2',
-    price: '6 000',
+    subtitle: '	Стационар амбулаторный 1 день \n Туда входит 4-х разовая питание и физиотерапия.Шприц, система, физ- раствори',
+    price: '350 000',
+},
+{
+  id: 4,
+  subtitle: 'Консультация проктолога',
+  price: '175 000',
+},
+{
+  id: 5,
+  subtitle: 'Консультация флеболога + УЗИ в подарок',
+  price: '175 000',
+},
+{
+  id: 6,
+  subtitle: 'Вытяжение позвоночника',
+  price: '40 000',
+},
+{
+  id: 7,
+  subtitle: 'Вытяжение шейного отдела позвоночника',
+  price: '30 000',
+},
+{
+  id: 8,
+  subtitle: 'ИРТ (иглатерапия)',
+  price: '70 000',
+},
+{
+  id: 9,
+  subtitle: 'Консультация врача реаниматолога',
+  price: '150 000',
+},
+{
+  id: 10,
+  subtitle: 'ЛФК',
+  price: '150 000',
+},
+{
+  id: 11,
+  subtitle: 'Электротерапия	33 000',
+  price: '33 000',
 },
 
 
@@ -151,10 +196,11 @@ export default function Services() {
     </div> 
     <div className='services__items'> 
      
-        <Image className='services__img' src='/assets/services-img.png' width={528} height={694}/>
+        {/* <Image className='services__img' src='/assets/services-img.png' width={528} height={694}/> */}
      
       <div className='services__item_container'>
     <ServicesItem data={data[0].narcomania}/>
+    {/* <ServicesItem data={data[0].narcomania}/> */}
       </div>
 
     </div>

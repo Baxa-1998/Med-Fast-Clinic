@@ -4,6 +4,7 @@ import './header.scss'
 import Button from '@/components/UI/Button'
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
+import Image from 'next/image'
 
 export default function Header({isBurger, setIsBurger}) {
  
@@ -60,8 +61,8 @@ export default function Header({isBurger, setIsBurger}) {
   return (
     <header className={`header ${isHeader ? 'header-active' : ""}`}>
          <div className='header__left'>
-          <img id='logo' src="/assets/logo.png" alt="logo" />
-          <h2 className='header__left_title'>Med Fast Clinic</h2> 
+          <Image id='logo' src="/assets/logo.png" width={200} height={200} alt="logo" />
+   
 
          </div>
          <div className='header__center'>

@@ -113,6 +113,17 @@
       display: flex;
     }
   }
+  @media screen and (max-width: 540px){
+    padding-left: 0px;
+    .header__left{
+      // img{
+      //   width: 40px;
+      // }
+      .header__left_title{
+        font-size: 20px;
+      }
+    }
+  }
     
 }
 

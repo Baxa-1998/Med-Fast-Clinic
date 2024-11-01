@@ -1,9 +1,10 @@
 .services{
   width: 90%; 
-  height: fit-content; 
+  height: 1200px; 
   margin: auto ;
   margin-top: 50px;
-  background: var(--background);
+  background: var(--background); 
+
   .services__main_text{
     display: flex;
     gap: 15px;
@@ -32,10 +33,11 @@
     .services__item_container{
       width: 100%;
       .services__item{
-        
+        width: 100%;
         .services__item_head{
           display: flex;
           justify-content: space-between;
+         
           gap: 15px;
           border-bottom: 1px solid #D7E2FF;
           padding-bottom: 15px;
@@ -55,9 +57,9 @@
         }
         .services__prices{
           margin-top: 25px;
-          width: 526px;
+          width: fit-content;
           height: 266px;
-        
+          width: 100%;
        
         
     
@@ -70,6 +72,8 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            width: 100%;
+        
             // margin-top: 25px;
             padding: 15px;
             &:hover{

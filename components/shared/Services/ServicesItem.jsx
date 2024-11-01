@@ -15,49 +15,37 @@ export default function ServicesItem({data}) {
          
             <div className='services__line'></div>
       </div>
-      <div className='flex justify-between'>
+      <div className='flex justify-between flex-col'>
       <div className='services__prices'>
-        <h3>
+        {/* <h3>
          {data.headTitle}
-        </h3>
+        </h3> */}
         {data.items.map((item)=>(
              <div className='services__prices_item'>
              <h4>{item.subtitle}</h4>
              <div className='prices__item_line'></div>
-            <p>от {item.price} ₽</p>
+            <p> {item.price} сум</p>
   
           </div>
 
         ))}
      
-        <div className='services__prices_item'>
-           <h4>Снятие ломки</h4>
-           <div className='prices__item_line'></div>
-          <p>от 6 500 ₽</p>
-
-        </div>
+       
 
       </div>
       <div className='services__prices'>
-        <h3>
-         {data.headTitle}
-        </h3>
-        {data.items.map((item)=>(
+     
+        {data.items2.map((item)=>(
              <div className='services__prices_item'>
              <h4>{item.subtitle}</h4>
              <div className='prices__item_line'></div>
-            <p>от {item.price} ₽</p>
+            <p> {item.price} сум</p>
   
           </div>
 
         ))}
      
-        <div className='services__prices_item'>
-           <h4>Снятие ломки</h4>
-           <div className='prices__item_line'></div>
-          <p>от 6 500 ₽</p>
-
-        </div>
+       
 
       </div>
 
