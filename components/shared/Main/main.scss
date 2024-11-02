@@ -7,6 +7,7 @@
   margin-top: -100px;
  padding-top: 250px;
  position: relative;
+
 //  img{
 //   position: fixed;
 //   // position: absolute;
@@ -71,6 +72,12 @@
   @media screen and (max-width: 540px){
     padding-top: 125px;
     margin-top: 0px;
+    background: url('../../../public//assets/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    video{
+      display: none;
+    }
     .main__title{
       font-size: 28px;
       width: 350px;

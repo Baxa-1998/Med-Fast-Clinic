@@ -89,8 +89,8 @@ export default function Reviews() {
     return (
       <div
       className={className}
-      style={{ ...style, display: "block", background: "#F1F5FF", width: '169px', height: "112px", color: '#2770F1'}}
-      onClick={onClick}>Назад</div>
+      style={{ ...style, display: "block",   fontFamily: "'Montserrat', sans-serif",  background: "#F1F5FF", width: '169px', height: "112px", }}
+      onClick={onClick}></div>
     );
   }
   return (

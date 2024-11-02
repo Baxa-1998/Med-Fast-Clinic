@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 .reviews{
   width: 90%;
   margin: auto;
@@ -104,14 +105,15 @@
     justify-content: center;
     color: #1B315F;
     font-size: 18px;
-    font-weight: 600;
-    font-family: "--font-montserrat";
+    font-family: monospace;
+    font-weight: 700;
   }
 
 }
 
 .slick-prev{
   left: -200px;
+
 
   &::before{
     content: 'Назад';
@@ -121,9 +123,16 @@
     align-items: center;
     justify-content: center;
     color: #1B315F;
+
+    // font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    // font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: monospace;
+    font-weight: 700;
     font-size: 18px;
-    font-weight: 600;
-    font-family: "--font-montserrat";
+   
+   
+  
+   
   }
 
 }
