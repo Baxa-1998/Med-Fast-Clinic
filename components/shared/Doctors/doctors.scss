@@ -167,6 +167,47 @@
     margin:0 10px; /* Убедитесь, что слайды корректно выравниваются */
     outline: none;
 }
+@media screen and (max-width: 540px){
+  height: 820px;
+  .slick-list{
+    height: 580px;
+  }
+  .doctors__main_text{
+    .doctors__title{
+      font-size: 32px;
+    }
+  }
+  .slider-container{
+    width: 100% !important;
+    .doctors__item{
+      width: 255px !important;
+      height: 450px !important;
+      .reviews__title{
+        font-size: 20px;
+      }
+    
+      .doctors__item_title{
+        font-size: 20px;
+      }
+    }
+  }
+    .slick-prev{
+      display: none !important;
+    }
+    .slick-next{
+      display: none;
+    }
+    .reviews__main_text{
+  
+      .reviews__title{
+        font-size: 32px;
+  
+      }
+      .reviews__line{
+  height: 75px;
+      }
+    }
+  } 
  
 }
 
