@@ -37,4 +37,24 @@
       text-decoration: underline;
     }
   }
+  @media screen and (max-width: 768px){
+    min-height: 322px;
+    .consultation__item_title{
+      font-size: 25px;
+
+    }
+    
+  }
+  @media screen and (max-width: 540px){
+    padding: 10px;
+    .consultation__item_title{
+      font-size: 22px;
+      br{
+        display: none;
+      }
+    }
+    .consultation__item_text{
+      font-size: 16px;
+    }
+  }
 }

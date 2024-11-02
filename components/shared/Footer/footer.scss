@@ -66,6 +66,28 @@
     }
 
   }
-
+  @media screen and (max-width: 1366px){
+    .footer__container .footer__right div {
+      width: 750px !important;
+      height: fit-content !important;
+      margin-left: 50%; 
+      transform: translate(-40%);
+  }
+}
+@media screen and (max-width: 900px){ 
+  padding: 25px;
+  .footer__container{
+    width: 100%;
+    flex-direction: column;
+    gap: 30px;
+    .footer__right{
+      width: 100%;
+      div{
+        transform: translate(0%);
+        margin-left: 0%;
+      }
+    }
+  }
+}
  
 }
