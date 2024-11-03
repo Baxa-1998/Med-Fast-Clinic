@@ -7,7 +7,7 @@ export default function Footer() {
     <div className='footer'> 
     <div className="footer__container">
     <div className="footer__left">
-      <div className='footer__logo'></div> 
+      <Image width={150} height={150} src={'/assets/logo-white.png'}/>
       <a className='footer__phone' href='tel:+956210303'>
       Тел:(95) 621 03 03 / (95) 608 03 03
       </a>
