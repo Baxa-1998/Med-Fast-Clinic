@@ -10,7 +10,7 @@ export default function Footer() {
     gsap.fromTo(
       '.footer__left',
       {
-        x: -500,
+        x: -1000,
    
       },
       {
@@ -28,7 +28,7 @@ export default function Footer() {
     gsap.fromTo(
       '.footer__right',
       {
-        x: 500,
+        x: 1000,
    
       },
       {
