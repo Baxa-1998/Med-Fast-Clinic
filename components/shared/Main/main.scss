@@ -72,9 +72,23 @@
   @media screen and (max-width: 540px){
     padding-top: 125px;
     margin-top: 0px;
-    background: url('../../../public//assets/background.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
+    // background: url('../../../public//assets/background.jpg');
+    // background-size: cover;
+    // background-repeat: no-repeat;
+    position: relative;
+    &::before{
+      content: ''; /* Создаем пустое содержимое */
+      position: absolute; /* Абсолютное позиционирование для псевдоэлемента */
+      top: 0; /* Положение сверху */
+      left: 0; /* Положение слева */
+      right: 0; /* Положение справа */
+      bottom: 0; /* Положение снизу */
+      background: url('../../../public/assets/background.jpg') no-repeat center center; /* Фоновое изображение */
+      background-size: cover; /* Масштабирование фона */
+      filter: brightness(80%); /* Применяем фильтр к фону */
+      z-index: -1; 
+    }
+    
     video{
       display: none;
     }

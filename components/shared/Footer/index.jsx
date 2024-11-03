@@ -2,7 +2,49 @@ import React from 'react'
 import './footer.scss'
 import Image from 'next/image'
 import ConsultationItem from '../Consultation/ConsultationItem'
+import { useGSAP } from '@gsap/react'
+import gsap from 'gsap'
+
 export default function Footer() {
+  useGSAP(()=>{
+    gsap.fromTo(
+      '.footer__left',
+      {
+        x: -500,
+   
+      },
+      {
+        x: 0,
+      
+        ease: 'power1.in',
+     
+        duration: 1,
+        scrollTrigger: {
+          trigger: '.footer__left',
+          start: 'top 80%',
+        },
+      },
+    );
+    gsap.fromTo(
+      '.footer__right',
+      {
+        x: 500,
+   
+      },
+      {
+        x: 0,
+      
+        ease: 'power1.in',
+     
+        duration: 1,
+        scrollTrigger: {
+          trigger: '.footer__right',
+          start: 'top 80%',
+        },
+      },
+    );
+  },[])
+ 
   return (
     <div className='footer'> 
     <div className="footer__container">

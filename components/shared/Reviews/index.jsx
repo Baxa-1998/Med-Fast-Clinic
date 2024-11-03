@@ -129,7 +129,7 @@ export default function Reviews() {
         </div>
         <div className="reviews__item">
           <h3 className="reviews__item_title">Усмонова Малика</h3>
-          <span className="reviews__item_date">25 декабря 2022</span>
+          <span className="reviews__item_date">15 марта 2022</span>
           <p className="reviews__item_text">
             "Хочу выразить огромную благодарность специалистам Med Fast Clinic за качественную
             работу и внимание к моим пожеланиям! Долго выбирала клинику для пластической операции и
@@ -153,7 +153,7 @@ export default function Reviews() {
         </div>
         <div className="reviews__item">
           <h3 className="reviews__item_title">Тошпулатов Улмас</h3>
-          <span className="reviews__item_date">25 декабря 2022</span>
+          <span className="reviews__item_date">3 декабря 2023</span>
           <p className="reviews__item_text">
 
           Попасть на прием к терапевту в Med Fast Clinic было, пожалуй, одним из лучших решений, которые я принял за последнее время! Это была не просто консультация, а настоящее погружение в мое здоровье. Врач провел прием так, что я чувствовал себя не просто пациентом, а полноценным участником процесса: объяснял каждый шаг, рассказывал, почему важно обратить внимание на те или иные симптомы, делился полезными лайфхаками для повседневной жизни.
@@ -162,7 +162,7 @@ export default function Reviews() {
         </div>
         <div className="reviews__item">
           <h3 className="reviews__item_title">Хайдарова Назокат</h3>
-          <span className="reviews__item_date">25 декабря 2022</span>
+          <span className="reviews__item_date">5 август 2023</span>
           <p className="reviews__item_text">
           Проходила курс электротерапии в Med Fast Clinic — и это был действительно удивительный опыт! Сначала сомневалсялась, что электротерапия поможет, но после первого сеанса ощутила разницу. Специалист подробно рассказал о том, как будет проходить процедура, ответил на все мои вопросы и помог избавиться от страха перед аппаратом.
 

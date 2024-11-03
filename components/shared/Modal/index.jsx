@@ -49,8 +49,17 @@ export default function Modal() {
   }
   const handleSubmit = (e) =>{
     e.preventDefault() 
-   sendToTelegram(inputValue)
-  console.log('send');
+    if(inputValue.name !== '' && inputValue.doctor !== '' && inputValue.phone !== '' && inputValue.phone !== '' ){
+      sendToTelegram(inputValue)
+      console.log('send');
+      setTimeout(() => {
+        setIsShow(!isShow)    
+      }, 1000);
+    }else{
+      alert('Заполните все поля')
+    }
+ 
+  
   setInputValue({
     name: '', 
     doctor: '', 
@@ -58,9 +67,9 @@ export default function Modal() {
     phone: ''
   });
   
-  setTimeout(() => {
-    setIsShow(!isShow)    
-  }, 1000);
+  // setTimeout(() => {
+  //   setIsShow(!isShow)    
+  // }, 1000);
 
   
     
@@ -85,11 +94,11 @@ export default function Modal() {
         <form action="" >
           <div className="inp__name">
             <Image width={32} height={32} src={'/assets/input-person.png'}/>
-          <input onChange={(e)=> setInputValue({...inputValue, name: e.target.value})} value={inputValue.name} type="text" placeholder="Ваше имя" />
+          <input required onChange={(e)=> setInputValue({...inputValue, name: e.target.value})} value={inputValue.name} type="text" placeholder="Ваше имя" />
           </div>
         <div className='inp__select'>
         <Image width={32} height={32} src={'/assets/input-person.png'}/>
-        <select onChange={(e)=> setInputValue({...inputValue,  doctor: e.target.value})} value={inputValue.doctor} name="" id="">
+        <select required onChange={(e)=> setInputValue({...inputValue,  doctor: e.target.value})} value={inputValue.doctor} name="" id="">
       
             <option value="" disabled selected hidden>
               Выберите врача
@@ -101,11 +110,11 @@ export default function Modal() {
         </div>
         <div  className='inp__date'> 
         <Image width={32} height={32} src={'/assets/input-person.png'}/>
-        <input onClick={handleOpenInput} type="text" value={inputValue.date} placeholder='Выберите дату' />
+        <input required onClick={handleOpenInput} type="text" value={inputValue.date} placeholder='Выберите дату' />
         </div>
         <div className='inp__phone'> 
         <Image width={16} height={27} src={'/assets/input-mobile.png'}/>
-          <input onChange={(e)=> setInputValue({...inputValue, phone: e.target.value})} value={inputValue.phone} type='number' placeholder='Телефон' />
+          <input required onChange={(e)=> setInputValue({...inputValue, phone: e.target.value})} value={inputValue.phone} type='number' placeholder='Телефон' />
 
         </div>
       <div className='inp__hidden_date'>
