@@ -20,7 +20,7 @@ export default function Header({isBurger, setIsBurger}) {
   useEffect(()=>{
     window.addEventListener('scroll', ()=>{
       const scrollY = window.scrollY; 
-     if(scrollY >= 900){
+     if(scrollY >= 700){
       setIsHeader(true)
      }else{
       setIsHeader(false)

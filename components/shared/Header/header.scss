@@ -94,7 +94,13 @@
     width: 100%;
     padding-left: 30px;
     padding-right: 30px;
-    height: fit-content;
+    height: 150px;
+    .header__left{
+      img{
+        width: 200px;
+        height: 200px;
+      }
+    }
     .header__center{
       ul{
         gap: 15px;

@@ -44,15 +44,15 @@ export default function Drawer({isBurger, setIsBurger}) {
 
       
       <div className='footer__social'>
-        <div className='footer__social_item'>
+        <a href='https://www.facebook.com/people/Med-Fast-Clinic-Samarkand/61564297646807/?mibextid=LQQJ4d&rdid=w6cHJlBNZ3jtzxAt&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2FhN9EKQ8VM8EBZZPk%2F%3Fmibextid%3DLQQJ4d%26tpclid%3Dfacebook.PAZXh0bgNhZW0CMTEAAaawJKPh1NiNs6DMrTaya_Gdtdj5Wq1BuQAvyagDgncKCLA-lpmAFQNroL0_aem__NtRWmfqaG2xIwIzpS-TUw'  className='footer__social_item'>
           <Image width={15} height={30} src={'/assets/facebook.png'} alt='dfa'/>
-        </div>
-        <div className='footer__social_item'>
+        </a>
+        <a href='https://t.me/medfastclinic1' className='footer__social_item'>
           <Image width={18} height={16} src={'/assets/telegram.png'}/>
-        </div>
-        <div className='footer__social_item'>
+        </a>
+        <a href='https://www.instagram.com/medfastclinic.uz?igsh=MTc2enBldWdhN2c4MQ==' className='footer__social_item'>
           <Image width={25} height={25} src={'/assets/instagram.png'}/>
-        </div>
+        </a>
       </div>
     </div>
               </div>
