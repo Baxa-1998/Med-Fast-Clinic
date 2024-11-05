@@ -17,18 +17,7 @@ export default function Header({isBurger, setIsBurger}) {
  document.body.style.overflow = ''
     }
   })
-  useEffect(()=>{
-    window.addEventListener('scroll', ()=>{
-      const scrollY = window.scrollY; 
-     if(scrollY >= 700){
-      setIsHeader(true)
-     }else{
-      setIsHeader(false)
-     }
-    })
  
-    
-  },[])
   useGSAP(()=>{
     gsap.fromTo("#stagger", {
       y: -100,
