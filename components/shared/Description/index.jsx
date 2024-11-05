@@ -91,7 +91,7 @@ export default function Description() {
   return (
     <section className="description">
       <div className="description__img">
-        <Image width={412} height={412} src={'/assets/doctor.png'} alt="doctor" />
+        <Image width={412} height={412} src={'/assets/doctor.JPG'} alt="doctor" />
         <h3>
           Абдуллаев Достонжон <br />
           <span>Кахрамонович</span>
