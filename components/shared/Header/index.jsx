@@ -48,7 +48,7 @@ export default function Header({isBurger, setIsBurger}) {
 
   })
   return (
-    <header className={`header ${isHeader ? 'header-active' : ""}`}>
+    <header className={`header`}>
          <div className='header__left'>
           <Image  id='logo' src="/assets/logo.png" width={280} height={200} alt="logo" />
    

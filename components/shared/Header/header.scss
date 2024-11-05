@@ -9,6 +9,7 @@
   height: 180px; 
   color: white;
   transition: 300ms ease-in;
+  background: none;
   
 
   // background: white;
@@ -126,6 +127,8 @@
     padding-left: 0px;
     padding-bottom: 12px;
     height: 120px;
+
+   
     .header__left{
       img{
       
@@ -144,11 +147,7 @@
     
 }
 
-.header-active{
-    background: white;
-  color: #1B315F; 
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-}
+
 
 .burger-active{
   transform: rotate(130deg); 
