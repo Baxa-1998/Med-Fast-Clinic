@@ -91,7 +91,7 @@ export default function Description() {
   return (
     <section className="description">
       <div className="description__img">
-        <Image width={412} height={412} src={'/assets/doctor.JPG'} alt="doctor" />
+        <Image width={412} height={412} src={'/assets/doctor.png'} alt="doctor" />
         <h3>
           Абдуллаев Достонжон <br />
           <span>Кахрамонович</span>
@@ -113,7 +113,7 @@ export default function Description() {
           благополучной жизни, поэтому с особым трепетом относимся к потребностям <br /> наших
           пациентов и их семей.
         </p>
-        <h3 id="description-text">Почему выбирают нас?</h3>
+        {/* <h3 id="description-text">Почему выбирают нас?</h3> */}
         <h4> 1. Комплексный подход к здоровью всей семьи.</h4>
         <p id="description-text">
           Наша клиника предоставляет медицинские услуги для детей и взрослых, <br /> а также для
@@ -143,7 +143,7 @@ export default function Description() {
           <p> Наша клиника расположена в удобном
           месте и предлагает гибкий <br /> график работы, включая вечерние и выходные часы, чтобы
           каждый пациент мог найти время для заботы о здоровье.</p>
-        <h4 id="description-text">Наши услуги:</h4>
+        {/* <h4 id="description-text">Наши услуги:</h4>
         <ul id="description-text">
           <li id="description-text">Профилактические осмотры и консультации специалистов</li>
           <li id="description-text">Диагностика и лечение острых и хронических заболеваний</li>
@@ -151,7 +151,7 @@ export default function Description() {
           <li id="description-text">Программы ведения беременности и уход за новорожденными</li>
           <li id="description-text">Реабилитация и поддерживающая терапия для пожилых людей</li>
           <li id="description-text">Программы восстановления после заболеваний и травм</li>
-        </ul>
+        </ul> */}
         <p id="description-text">
           Мы строим доверительные отношения с нашими пациентами, потому что уверены: только так
           можно достичь лучших результатов в лечении. <br /> Здоровье семьи – это наша главная

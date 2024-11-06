@@ -90,12 +90,13 @@
     width: 412px;
     height: 100%;
     margin-top: 50px;
+    object-fit: cover;
    
     img{
       border-radius: 50% 50% 50% 0%;
-      width: 400px;
-      height: 370px; 
-      // object-fit: cover;
+      // width: 400px;
+      // height: 370px; 
+      object-fit: cover;
     }
    
   
