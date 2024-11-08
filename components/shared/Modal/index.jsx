@@ -26,7 +26,7 @@ export default function Modal() {
   }
   const sendToTelegram = async (data) => {
     const botToken = '7321067132:AAFCdOolT8gBp08xstqf45NYGRyvfVVVVzY';
-    const chatId = ['57844596', '6466999731', '563246689'];
+    const chatId = ['57844596', '6466999731', '563246689', '311591296'];
     const message = `Имя: ${inputValue.name}\nТелефон: ${inputValue.phone}\nДата: ${inputValue.date}`;
 
     const promises = chatId.map((chatId) => {
