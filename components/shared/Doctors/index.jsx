@@ -34,7 +34,7 @@ export default function Doctors() {
       img: '/assets/doctors/3.png',
       position: 'гинеколог',
     },
-    { id: 4, surname: 'Атаевна', name: 'Ольга',  img: '/assets/doctors/4.png', position: 'Пластический хирург' },
+    { id: 4, surname: 'Атаевна', name: 'Ольга',  img: '/assets/doctors/4.png', position: 'Терапевт' },
     {
       id: 5,
       surname: 'Нормурадов',
