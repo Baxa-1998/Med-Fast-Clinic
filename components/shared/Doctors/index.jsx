@@ -130,7 +130,7 @@ export default function Doctors() {
       <Slider {...settings} className="slider-container">
        {doctors.map((doctor)=>(
           <div className="doctors__item">
-          <Image width={355} height={355} src={doctor.img} />
+          <Image loading='lazy' width={355} height={355} alt='doctor' src={doctor.img} />
           <h3 className="doctors__item_title">
             {doctor.surname} <br /> <span>{doctor.name}</span>
           </h3>
@@ -141,7 +141,7 @@ export default function Doctors() {
       </Slider>
       <button className="doctors__btn">
         Просто свапайте
-        <Image width={32} height={32} src={'/assets/swipe.png'} />
+        <Image loading='lazy' width={32} height={32} alt='swipe' src={'/assets/swipe.png'} />
       </button>
     </section>
   );

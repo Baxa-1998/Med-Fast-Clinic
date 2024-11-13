@@ -77,7 +77,7 @@ export default function Modal() {
 
   // },[date])
 
-  console.log(isShow);
+
 
   return (
     <div className={`modal ${isModalOpen ? 'active' : ''}`}>

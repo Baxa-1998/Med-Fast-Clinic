@@ -160,15 +160,7 @@ export default function Description() {
           но и за поддержкой, пониманием и вниманием к каждому члену семьи.
         </p>
       </div>
-      {/* <i className="square"></i>
-		<div className="square"><Image width={50} height={50} src='/assets/pill.png'/></div>
-		<div className="square"><Image width={50} height={50} src='/assets/pill.png'/></div>
-		<div className="square"><Image width={50} height={50} src='/assets/pill.png'/></div>
-		<div className="square"><Image width={50} height={50} src='/assets/pill.png'/></div>
-		<div className="square"><Image width={50} height={50} src='/assets/pill.png'/></div>
-		<div className="square"><Image width={50} height={50} src='/assets/pill.png'/></div>
-		<div className="square"><Image width={50} height={50} src='/assets/pill.png'/></div>
-		<div className="square"><Image width={50} height={50} src='/assets/pill.png'/></div> */}
+
     </section>
   );
 }
