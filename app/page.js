@@ -14,15 +14,21 @@ import Services from "@/components/shared/Services";
 import { ModalCTX } from '@/context/ModalCTX';
 import Title from '@/components/UI/title';
 import Drawer from '@/components/shared/Drawer';
+import Preloader from '@/components/shared/Preloader';
+import dynamic from 'next/dynamic';
 
 
 export default function Home() {
   const [isBurger, setIsBurger] = React.useState(false)
 
+  const Main = dynamic(() => import('@/components/shared/Main'), {
+    loading: () => <Preloader />,
+  });
 
   return (
     <ModalCTX>
-          <div className="wrapper">
+    {/* <Suspense fallback={<Preloader/>}> */}
+    <div className="wrapper">
       <Modal  />
       <Drawer setIsBurger={setIsBurger} isBurger={isBurger}/>
       <Header isBurger={isBurger} setIsBurger={setIsBurger} />

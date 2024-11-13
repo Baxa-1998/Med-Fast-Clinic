@@ -55,16 +55,16 @@ export default function Description() {
     gsap.fromTo(
       '.description__img',
       {
-        x: -500,
+        opacity: 0,
       },
       {
-        x: 0,
+        opacity: 1,
         duration: 1,
         animationDelay: 1,
         // stagger: 0.2,
         ease: 'back.out',
         scrollTrigger: {
-          trigger: '#title',
+          trigger: '.description__img',
           start: 'top 80%',
         },
       },
@@ -91,7 +91,7 @@ export default function Description() {
   return (
     <section className="description">
       <div className="description__img">
-        <Image width={412} height={412} src={'/assets/doctor.png'} alt="doctor" />
+        <Image loading='lazy' width={412} height={412} src={'/assets/doctor.png'} alt="doctor" />
         <h3>
         Мухитдинов Шерзод <br />
           <span>Шавкатович </span>

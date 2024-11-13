@@ -41,9 +41,9 @@ export default function Adress() {
       Как к нам добраться?
       </h3>
       <ul>
-        <li><a href="#"> <Image width={26} height={26} src={'/assets/location.png'}/> г. Богучар, ул. Мжд Киевское 17-й км</a></li>
-        <li><a href="#"> <Image width={26} height={26} src={'/assets/mobile.png'}/>8 (800) 123-45-67</a></li>
-        <li><a href="#"> <Image width={26} height={26} src={'/assets/mobile.png'}/>8 (800) 123-45-67</a></li>
+        <li><a href="#"> <Image width={26} height={26} src={'/assets/location.png'}/>Адрес: ул. Озод Шарк, 8</a></li>
+        <li><a href="#"> <Image width={26} height={26} src={'/assets/mobile.png'}/>(95) 621 03 03</a></li>
+        <li><a href="#"> <Image width={26} height={26} src={'/assets/mobile.png'}/>(95) 608 03 03</a></li>
         
       </ul>
       <Button title={'Оставить заявку'}/>
