@@ -26,7 +26,7 @@ export default function Home() {
   return (
     <ModalCTX>
     {/* <Suspense fallback={<Preloader/>}> */}
-    <div className="wrapper">
+    <div  className="wrapper">
       <Modal  />
       <Drawer setIsBurger={setIsBurger} isBurger={isBurger}/>
       <Header isBurger={isBurger} setIsBurger={setIsBurger} />
