@@ -64,7 +64,7 @@ export default function Main() {
   return (
     <section id='main' className='main'> 
 
-      <video  preload="metadata" autoPlay={true} muted loop src='./assets/video2.webm'/>
+      <video poster='/assets/background.jpg'  preload="metadata" autoPlay={true} muted loop src='./assets/video2.webm'/>
       <div className='main__content'>
     <Title>
     <h1 className='main__title'>Med Fast Clinic <br /> современная клиника <br /> для всей семьи!</h1> 
