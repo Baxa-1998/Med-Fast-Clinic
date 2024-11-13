@@ -4,10 +4,12 @@ import './main.scss'
 import Button from '@/components/UI/Button'
 import Title from '@/components/UI/title'
 import { useGSAP } from '@gsap/react'
-import gsap from 'gsap'
+
 
 import Image from 'next/image'
 import { splitTextToSpans } from '@/utils/textSplit'
+import dynamic from 'next/dynamic'
+const gsap = dynamic(() => import('gsap'), { ssr: false });
 
 export default function Main() { 
 
