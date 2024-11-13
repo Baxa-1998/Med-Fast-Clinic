@@ -6,7 +6,7 @@ import Description from "@/components/shared/Description";
 import Doctors from "@/components/shared/Doctors";
 import Footer from "@/components/shared/Footer";
 import Header from "@/components/shared/Header";
-import Main from "@/components/shared/Main";
+
 import Modal from "@/components/shared/Modal";
 import Photos from "@/components/shared/Photos";
 import Reviews from "@/components/shared/Reviews";
@@ -14,16 +14,16 @@ import Services from "@/components/shared/Services";
 import { ModalCTX } from '@/context/ModalCTX';
 import Title from '@/components/UI/title';
 import Drawer from '@/components/shared/Drawer';
-import Preloader from '@/components/shared/Preloader';
+
 import dynamic from 'next/dynamic';
 
 
 export default function Home() {
   const [isBurger, setIsBurger] = React.useState(false)
 
-  const Main = dynamic(() => import('@/components/shared/Main'), {
-    loading: () => <Preloader />,
-  });
+  const Main = dynamic(() => import('@/components/shared/Main'))
+  //   loading: () => <Preloader />,
+  // });
 
   return (
     <ModalCTX>
