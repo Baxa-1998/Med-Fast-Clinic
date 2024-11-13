@@ -16,12 +16,12 @@ import Title from '@/components/UI/title';
 import Drawer from '@/components/shared/Drawer';
 import Preloader from '@/components/shared/Preloader';
 import dynamic from 'next/dynamic';
-import Main from '@/components/shared/Main';
+// import Main from '@/components/shared/Main';
 
 
 export default function Home() {
   const [isBurger, setIsBurger] = React.useState(false)
-
+  const Main = dynamic(() => import('@/components/shared/Main'));
 
   return (
     <ModalCTX>
