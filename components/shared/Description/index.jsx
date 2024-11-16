@@ -91,7 +91,7 @@ export default function Description() {
   return (
     <section className="description">
       <div className="description__img">
-        <Image priority loading='lazy' width={412} height={412} src={'/assets/doctor.png'} alt="doctor" />
+        <Image priority width={412} height={412} src={'/assets/doctor.png'} alt="doctor" />
         <h3>
         Мухитдинов Шерзод <br />
           <span>Шавкатович </span>
