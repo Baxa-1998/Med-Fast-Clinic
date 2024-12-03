@@ -55,9 +55,9 @@ export default function Footer() {
       </a>
     <div className='footer__contacts'>
       <ul>
-        <li><Image loading='lazy' width={26} height={26} src={'/assets/location.png'}/>Адрес</li>
+        <li><Image loading='lazy' width={26} height={26} src={'/assets/location.png'} alt='adress'/>Адрес</li>
         <a href='#'>г. Самарканд,  ул. Озод Шарк, 8</a>
-        <li><Image loading='lazy' width={26} height={26} src={'/assets/location.png'}/>Email</li>
+        <li><Image loading='lazy' width={26} height={26} src={'/assets/location.png'} alt='email'/>Email</li>
         <a href='#'>example@example.ru</a>
 
       </ul>

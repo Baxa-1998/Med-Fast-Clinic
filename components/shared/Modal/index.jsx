@@ -14,13 +14,7 @@ export default function Modal() {
   });
   const [isShow, setIsShow] = React.useState(true);
   const inputRef = useRef(null);
-  /*************  ✨ Codeium Command ⭐  *************/
-  /**
-   * Opens the date picker input when the user clicks on the "Выбрать дату" button.
-   * @function
-   * @returns {void}
-   */
-  /******  6b9d5233-0674-4cc9-a1b6-bafe0c93e114  *******/
+ 
   function handleOpenInput() {
     inputRef.current.showPicker();
   }
@@ -92,7 +86,7 @@ export default function Modal() {
           </p>
           <form action="">
             <div className="inp__name">
-              <Image width={32} height={32} src={'/assets/input-person.png'} />
+              <Image width={32} height={32} src={'/assets/input-person.png'} alt='input' />
               <input
                 required
                 onChange={(e) => setInputValue({ ...inputValue, name: e.target.value })}
@@ -102,7 +96,7 @@ export default function Modal() {
               />
             </div>
             <div className="inp__select">
-              <Image width={32} height={32} src={'/assets/input-person.png'} />
+              <Image width={32} height={32} src={'/assets/input-person.png'} alt='input' />
               {/* <select
                 required
                 onChange={(e) => setInputValue({ ...inputValue, doctor: e.target.value })}
@@ -118,7 +112,7 @@ export default function Modal() {
               </select> */}
             </div>
             <div className="inp__date">
-              <Image width={32} height={32} src={'/assets/input-person.png'} />
+              <Image width={32} height={32} src={'/assets/input-person.png'} alt='input' />
               <input
                 required
                 onClick={handleOpenInput}
@@ -128,7 +122,7 @@ export default function Modal() {
               />
             </div>
             <div className="inp__phone">
-              <Image width={16} height={27} src={'/assets/input-mobile.png'} />
+              <Image width={16} height={27} src={'/assets/input-mobile.png'} alt='input' />
               <input
                 required
                 onChange={(e) => setInputValue({ ...inputValue, phone: e.target.value })}

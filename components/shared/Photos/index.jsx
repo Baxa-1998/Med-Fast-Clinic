@@ -54,28 +54,28 @@ export default function Photos() {
         <Image loading='lazy' alt='photo-clinic' className='card-background' width={371} height={277} src='/assets/photo-of-clinic/4.png'/>
         </div>
         <div id='stagger-img' className="photo__item">
-        <Image loading='lazy' alt='photo-clinic' width={371} height={277} src='/assets/photo.png'/>
+        <Image loading='lazy' alt='photo-clinic' width={371} height={277} src='/assets/photo-of-clinic/5.png'/>
         </div>
         <div id='stagger-img' className="photo__item">
-        <Image loading='lazy' alt='photo-clinic'  className='card-background'  width={371} height={277} src='/assets/photo.png'/>
+        <Image loading='lazy' alt='photo-clinic'  className='card-background'  width={371} height={277} src='/assets/photo-of-clinic/6.png'/>
         </div>
         <div id='stagger-img' className="photo__item">
-        <Image  loading='lazy' alt='photo-clinic' className='card-background'  width={371} height={277} src='/assets/photo.png'/>
+        <Image  loading='lazy' alt='photo-clinic' className='card-background'  width={371} height={277} src='/assets/photo-of-clinic/7.png'/>
         </div>
         <div id='stagger-img' className="photo__item">
-        <Image loading='lazy' alt='photo-clinic' className='card-background'  width={371} height={277} src='/assets/photo.png'/>
+        <Image loading='lazy' alt='photo-clinic' className='card-background'  width={371} height={277} src='/assets/photo-of-clinic/8.png'/>
         </div>
         <div id='stagger-img' className="photo__item">
-        <Image loading='lazy' alt='photo-clinic' className='card-background'  width={371} height={277} src='/assets/photo.png'/>
+        <Image loading='lazy' alt='photo-clinic' className='card-background'  width={371} height={277} src='/assets/photo-of-clinic/9.png'/>
         </div>
         <div id='stagger-img' className="photo__item">
-        <Image loading='lazy' alt='photo-clinic'  className='card-background'  width={371} height={277} src='/assets/photo.png'/>
+        <Image loading='lazy' alt='photo-clinic'  className='card-background'  width={371} height={277} src='/assets/photo-of-clinic/10.png'/>
         </div>       
          <div id='stagger-img' className="photo__item">
-        <Image  loading='lazy' alt='photo-clinic' className='card-background'  width={371} height={277} src='/assets/photo.png'/>
+        <Image  loading='lazy' alt='photo-clinic' className='card-background'  width={371} height={277} src='/assets/photo-of-clinic/11.png'/>
         </div>
         <div id='stagger-img' className="photo__item">
-        <Image loading='lazy' alt='photo-clinic'  className='card-background'  width={371} height={277} src='/assets/photo.png'/>
+        <Image loading='lazy' alt='photo-clinic'  className='card-background'  width={371} height={277} src='/assets/photo-of-clinic/12.png'/>
         </div>
   
       </div>
